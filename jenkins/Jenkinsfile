@@ -6,16 +6,16 @@ pipeline {
                 sh "bash jenkins/setup.sh"
             }
         }
-        //stage('Test') {
-        //    steps {
-        //        //
-        //    }
-        //}
-        //stage('Create Schema') {
-        //    steps {
-        //        //
-        //    }
-        //}
+        stage('Test') {
+            steps {
+                sh "bash jenkins/test.sh"
+            }
+        }
+        stage('Create Schema') {
+            steps {
+                sh "python3 create.py"
+            }
+        }
         //stage('Run') {
         //    steps {
         //        //
