@@ -1,4 +1,4 @@
-#!/bin/bash
+
 
 # install apt dependencies
 sudo apt update
